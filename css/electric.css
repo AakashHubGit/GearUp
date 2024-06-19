@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+.nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li, .nav ul img, .nav ul form {
+    margin-right: 20px;
+}
+
+.nav ul img {
+    height: 50px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li form input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.nav ul li form button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav ul li form button img {
+    height: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .cart button, .nav-right .profile button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-right .cart img, .nav-right .profile img {
+    height: 50px;
+}
+
+.nav-right .profile .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-right .profile .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-right .profile .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-right .profile:hover .dropdown-content {
+    display: block;
+}
+
+/* Content Styles */
+.content {
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.filters label, .filters select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Product Container Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box h4 {
+    margin: 10px 0;
+}
+
+.box p {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+.foot {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.foot h4, .foot p {
+    margin: 0;
+    padding: 5px 0;
+}
