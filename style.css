@@ -1,5 +1,5 @@
 html {
-    background-color: #dad7d0;
+    background-color: #efeae3;
     scroll-behavior: smooth;
     /* font-family: new york; */
 }
@@ -25,7 +25,7 @@ body {
     padding: 0;
 }
 .nav {
-    background-color: #dae4eb;
+    background-color: #dab24a;
     min-width: 100%; /* width: 100%; */
     height: 100px;
     top: 0;
@@ -83,11 +83,11 @@ body {
 .btndrop {
     display: none;
     position: absolute;
-    background-color: #9e9383;
-    min-width: 350px;
-    min-height: 350px;
+    background-color: #999b84;
+    min-width: 250px;
+    min-height: 250px;
     font-size: 20px;
-    transform: translateX(-42%);
+    transform: translateX(-46%);
     margin-top: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -125,7 +125,7 @@ body {
     width: 500px;
     height: 40px;
     border-radius: 15px;
-    box-shadow: 4px 4px 2px #5f849c;
+    box-shadow: 4px 4px 2px #999b84;
     margin-top: -100px;
     /* transform: translateY(15px); */
     padding-left: 10px;
@@ -194,7 +194,7 @@ body {
     height: 50px;
     font-size: 20px;
     border-radius: 25px;
-    background-color: #5f849c;
+    background-color: #999b84;
     font-family: 'Inter' sans-serif;
 }
 
@@ -250,7 +250,7 @@ display: block;
 #main {
     width: 100%;
     height: 350px;
-    background-color: #5f849c;
+    background-color: #999b84;
     border-radius: 10px;
     position: relative; /* Add position relative */
     overflow: hidden; /* Hide overflow */
@@ -477,7 +477,7 @@ display: block;
 
 footer {
     margin-top: 20px;
-    background-color: #5f849c;
+    background-color: #dab24a;
     /* padding: 20px; */
     width: 100%;
     height: 125px;
@@ -501,4 +501,47 @@ footer p {
     transform: translateY(-100%);
     font-family: harietta;
     color: #dad7d0;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 250px;
+    min-height: 250px;
+    margin: 0 15px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
 }
