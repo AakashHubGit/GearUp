@@ -1,0 +1,129 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Navigation styles */
+.nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul img {
+    margin-right: 10px;
+    height: 50px; /* Adjust height as needed */
+}
+
+.nav ul form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Cart and Profile styles */
+.cart {
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.profile {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
+}
+
+.dropdown-content .user img {
+    height: 20px; /* Adjust height as needed */
+    margin-right: 10px;
+}
+
+/* Content area styles */
+.content {
+    padding: 20px;
+}
+
+.product-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.product-description img {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.product-details {
+    max-width: 600px;
+}
+
+.product-details h2 {
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+.foot {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
