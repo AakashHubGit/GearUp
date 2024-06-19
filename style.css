@@ -6,17 +6,17 @@ html {
 
 @font-face {
     font-family: new york;
-    src: url(./NewYork.otf);
+    src: url(./fonts/NewYork.otf);
   }
 
 @font-face {
     font-family: harietta;
-    src: url(./HV\ Harietta\ Regular.ttf);
+    src: url(./fonts/HV\ Harietta\ Regular.ttf);
 }
 
 @font-face {
     font-family: harietta-bold;
-    src: url(./HV\ Harietta\ Bold.ttf);
+    src: url(./fonts/HV\ Harietta\ Bold.ttf);
 }
 
 body {
