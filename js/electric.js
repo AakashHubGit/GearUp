@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
   priceFilter.addEventListener("change", filterProducts);
 
   function filterProducts() {
-    const brand = brandFilter.value.toLowerCase();
+    const brand = brandFilter.value;
     const price = priceFilter.value;
 
     let products = Array.from(productContainer.children);
 
     // Filter by brand
     products.forEach((product) => {
-      const productName = product.querySelector("h4").innerText.toLowerCase();
+      const productName = product.querySelector("h4").innerText;
       if (brand === "all" || productName.includes(brand)) {
         product.style.display = "block";
       } else {
@@ -22,14 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Get visible products
-    let visibleProducts = products.filter(
-      (product) => product.style.display === "block"
-    );
-
     // Sort by price
+    products = products.filter((product) => product.style.display !== "none");
+
     if (price === "low") {
-      visibleProducts.sort((a, b) => {
+      products.sort((a, b) => {
         const priceA = parseInt(
           a.querySelector(".price").innerText.replace("₹", "")
         );
@@ -39,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return priceA - priceB;
       });
     } else if (price === "high") {
-      visibleProducts.sort((a, b) => {
+      products.sort((a, b) => {
         const priceA = parseInt(
           a.querySelector(".price").innerText.replace("₹", "")
         );
@@ -52,11 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Reorder products in container
     productContainer.innerHTML = "";
-    visibleProducts.forEach((product) => productContainer.appendChild(product));
-
-    // Append non-visible products back to the container
-    products
-      .filter((product) => product.style.display === "none")
-      .forEach((product) => productContainer.appendChild(product));
+    products.forEach((product) => productContainer.appendChild(product));
   }
 });
