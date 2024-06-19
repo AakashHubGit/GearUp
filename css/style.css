@@ -6,17 +6,17 @@ html {
 
 @font-face {
     font-family: new york;
-    src: url(../fonts/NewYork.otf);
+    src: url(./NewYork.otf);
   }
 
 @font-face {
     font-family: harietta;
-    src: url(../fonts/HV\ Harietta\ Regular.ttf);
+    src: url(./HV\ Harietta\ Regular.ttf);
 }
 
 @font-face {
     font-family: harietta-bold;
-    src: url(../fonts/HV\ Harietta\ Bold.ttf);
+    src: url(./HV\ Harietta\ Bold.ttf);
 }
 
 body {
@@ -277,14 +277,6 @@ display: block;
 }
 
 .slide p {
-    display: flex;
-    margin-left: 5%;
-    /* margin-top: 5%; */
-    font-size: 20px;
-    /* justify-content:; */
-}
-
-.slide .slide1 p {
     display: flex;
     margin-left: 5%;
     /* margin-top: 5%; */
