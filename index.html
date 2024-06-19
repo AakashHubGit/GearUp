@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Eco-Nest</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gear Up & Go</title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body>
     <div class="nav">
         <ul>
-            <img src="images/d90b388d413448d984d7dde1c432d70a-removebg-preview.png" />
+            <img src="#" />
             <li><a href="#">About</a></li>
             <div class="drop">
             <li><a href="#products">Category</a></li>
@@ -39,6 +40,63 @@
         </ul>
         <div class="nav-right">
         <div class="cart" style="margin-right: 50px;width: 50px; height: 50px; transform: translateY(8px); ;border-radius: none;"><button><img src="images/cart-removebg-preview.png" /></button></div>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Eco-Nest</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <img
+          src="images/d90b388d413448d984d7dde1c432d70a-removebg-preview.png"
+        />
+        <li><a href="#">About</a></li>
+        <div class="drop">
+          <li><a href="#products">Category</a></li>
+          <div class="btndrop">
+            <ul>
+              <li><a href="electric.html">Electrical</a></li>
+              <li><a>Tool</a></li>
+              <li><a>Fittings</a></li>
+              <li><a>Paints</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <li><button input="text" placeholder="Search..." id="btn" type="button"></button></li> -->
+        <li>
+          <form id="btn">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <i class="fa fa-search">
+                <a href="#"><img src="images/search-removebg-preview.png" /></a>
+              </i>
+            </button>
+          </form>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <div
+          class="cart"
+          style="
+            margin-right: 50px;
+            width: 50px;
+            height: 50px;
+            transform: translateY(8px);
+            border-radius: none;
+          "
+        >
+          <button><img src="images/cart-removebg-preview.png" /></button>
+        </div>
+>>>>>>> 3c1dfdaf643f3bd1d3733a5b9849302e9082c082
         <div class="profile">
           <button id="your_profile" class="dropbtn" onclick="myFunction()">
             User
@@ -115,42 +173,67 @@
     </div>
     <br>
     <br>
+    <div class="carousel">
+        <div class="carousel-container" id="carousel-container">
+            <div class="carousel-item">
+                <img src="./elec.jpg" alt="Item 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./paints.jpg" alt="Item 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./power tools.jpg" alt="Item 3">
+            </div>
+            <div class="carousel-item">
+                <img src="./bathroom.jpg" alt="Item 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/item5.jpg" alt="Item 5">
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </div>
+    <br>
+    <br>
     <div id="products">
         <h2 class="heading">Our Best-Selling Products</h2>
         <div class="product-container">
             <div class="box">
                 <button title="View products">
-                    <img src="images/fridge-removebg-preview.png" alt="Refrigerator" />
-                    <h4>Refrigerators</h4>
+                    <img src="./bathroom.jpg" alt="Refrigerator" />
+                    <h4>RBathroom Fittings</h4>
                     <p>Rating: <img src="images/rating-removebg-preview (1).png" alt="Rating" /></p>
                 </button>
             </div>
     
             <div class="box">
                 <button title="View products">
-                    <img src="images/juicer.jpg" alt="Juicer and Grinder" />
-                    <h4>Juicers and Grinders</h4>
+                    <img src="./elec.jpg" alt="Electrical" />
+                    <h4>Electrical items</h4>
                     <p>Rating: <img src="images/rating-removebg-preview (1).png" alt="Rating" /></p>
                 </button>
             </div>
     
             <div class="box">
                 <button title="View products">
-                    <img src="images/microwave-removebg-preview.png" alt="Microwave" />
-                    <h4>Microwaves and Ovens</h4>
+                    <img src="./power tools.jpg" alt="Microwave" />
+                    <h4>Power tools</h4>
                     <p>Rating: <img src="images/rating-removebg-preview (1).png" alt="Rating" /></p>
                 </button>
             </div>
     
             <div class="box">
                 <button title="View products">
-                    <img src="images/washingmachine-removebg-preview.png" alt="Washing Machine" />
-                    <h4>Washing Machines</h4>
+                    <img src="./paints.jpg" alt="Washing Machine" />
+                    <h4>Paints</h4>
                     <p>Rating: <img src="images/rating-removebg-preview (1).png" alt="Rating" /></p>
                 </button>
             </div>
     
-            <div class="box">
+            <!-- <div class="box">
                 <button title="View products">
                     <img src="images/cooktop.png" alt="Cooktop" />
                     <h4>Gas Cooktops</h4>
@@ -163,9 +246,68 @@
                     <img src="images/espresso.jpg" alt="Espresso Machine" />
                     <h4>Espresso Machines</h4>
                     <p>Rating: <img src="images/rating-removebg-preview (1).png" alt="Rating" /></p>
-                </button>
+                </button> -->
             </div>
         </div>
+
+        <div class="box">
+          <button title="View products">
+            <img src="images/juicer.jpg" alt="Juicer and Grinder" />
+            <h4>Juicers and Grinders</h4>
+            <p>
+              Rating:
+              <img src="images/rating-removebg-preview (1).png" alt="Rating" />
+            </p>
+          </button>
+        </div>
+
+        <div class="box">
+          <button title="View products">
+            <img src="images/microwave-removebg-preview.png" alt="Microwave" />
+            <h4>Microwaves and Ovens</h4>
+            <p>
+              Rating:
+              <img src="images/rating-removebg-preview (1).png" alt="Rating" />
+            </p>
+          </button>
+        </div>
+
+        <div class="box">
+          <button title="View products">
+            <img
+              src="images/washingmachine-removebg-preview.png"
+              alt="Washing Machine"
+            />
+            <h4>Washing Machines</h4>
+            <p>
+              Rating:
+              <img src="images/rating-removebg-preview (1).png" alt="Rating" />
+            </p>
+          </button>
+        </div>
+
+        <div class="box">
+          <button title="View products">
+            <img src="images/cooktop.png" alt="Cooktop" />
+            <h4>Gas Cooktops</h4>
+            <p>
+              Rating:
+              <img src="images/rating-removebg-preview (1).png" alt="Rating" />
+            </p>
+          </button>
+        </div>
+
+        <div class="box">
+          <button title="View products">
+            <img src="images/espresso.jpg" alt="Espresso Machine" />
+            <h4>Espresso Machines</h4>
+            <p>
+              Rating:
+              <img src="images/rating-removebg-preview (1).png" alt="Rating" />
+            </p>
+          </button>
+        </div>
+      </div>
     </div>
     <br />
     <br />
