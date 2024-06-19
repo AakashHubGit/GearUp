@@ -284,6 +284,14 @@ display: block;
     /* justify-content:; */
 }
 
+.slide .slide1 p {
+    display: flex;
+    margin-left: 5%;
+    /* margin-top: 5%; */
+    font-size: 20px;
+    /* justify-content:; */
+}
+
 .slide h3 {
     display: flex;
     margin-left: 5%;
